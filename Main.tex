@@ -227,14 +227,14 @@ The method sugested for this measurements is the depicted in figure \ref{fig:DUT
 \begin{figure}[ht]
 \begin{center}
 \input{./Figures/DUTdelaymeasurements.tikz}
-\caption{Measurement sequence for the determination of delays.} \label{fig:DUTdelaymeasurement}
+\caption{Measurement sequence for the determination of delays. Cable B must be conected to channel 1 of the counter.} \label{fig:DUTdelaymeasurement}
 \end{center}
 \end{figure}
 
 Measurement 1) corresponds to a tare. Then the cable under test and a connector must be added to the channel 2 of the time interval counter. The measurement equation for this procedure is 
 
 \begin{equation}
-Delay = Delay2 - Delay1 + corrections
+Delay = [\text{Delay measured at 2)} ] - [\text{Delay measured at 1)} ] + corrections
 \end{equation}
 The corrections are the estimated delay introduced by adaptator: \SI{-0.1}{\nano\second}. 
 
@@ -246,7 +246,7 @@ In this configuration, a \SI{1}{\volt} trigger level is applied on both channels
 
 The display will present the mean value of the delay between Channel 1 and Channel2, averaged over 100 measurements. The standard deviation is also shown.
 
-If you cannot unmount the antenna cable to perform this measurement, please contact \texttt{\url{luna@inti.gob.ar}}.
+If you cannot unmount the antenna cable to perform this measurement, the refelection technique explained in \cite{Rovera} is recommended. Please contact \texttt{\url{luna@inti.gob.ar}} in this case.
 
 %\subsection{$X_p$ Measurement}
 %\subsection{CABDLY Measurement}
@@ -278,7 +278,7 @@ Before starting logging data of the traveling receiver, it is necessary to measu
 \begin{figure}[ht]
 \begin{center}
 \input{./Figures/cabledelaymeasurement.tikz}
-\caption{Measurement sequence for the determination of the value of phase relationship between the \SI{10}{\mega\hertz} reference and the 1PPS input ($X_0$). The "PPS cable " is not part of the traveling system.} \label{fig:cabledelaymeasurement}
+\caption{Measurement sequence for the determination of the value of phase relationship between the \SI{10}{\mega\hertz} reference and the 1PPS input ($X_0$). The "PPS cable " is not part of the traveling system. Cable B must be connnected to channel 1 of the counter.} \label{fig:cabledelaymeasurement}
 \end{center}
 \end{figure}
 
